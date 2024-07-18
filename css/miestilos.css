@@ -7,9 +7,8 @@ a {
     text-decoration: none;
 }
 
-body { 
+body {
     background: gray
-    
 }
 
 #navegacion {
@@ -39,7 +38,7 @@ span {
     padding-bottom: 20px;
     border-width: 5px;
     width: 25%;
-   
+
 }
 
 
@@ -50,10 +49,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 .content {
     flex: 1;
     padding: 20px;
 }
+
 footer {
     position: fixed;
     left: 0;
@@ -76,14 +77,19 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  td, th {
+}
+
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-  tr:nth-child(even) {
+}
+
+tr:nth-child(even) {
     background-color: #dddddd;
-  }
+}
+
+#contacto {
+    margin-left: 60px;
+}
