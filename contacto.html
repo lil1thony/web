@@ -70,21 +70,44 @@
                     <br>
                     <p>
                         <label>Experiencia:
-                            <input type="radio" name="experiencia" 
-                            value="1" checked> 1 año
-                       
-                           
-                            <input type="radio" name="experiencia" 
-                            value="2" checked> 2 año
+                            <input type="radio" name="experiencia" value="1" checked> 1 año
 
-                            <input type="radio" name="experiencia" 
-                            value="3" checked> 3 año
 
-                            <input type="radio" name="experiencia" 
-                            value="más de 3" checked> más de 3 años
+                            <input type="radio" name="experiencia" value="2" checked> 2 año
+
+                            <input type="radio" name="experiencia" value="3" checked> 3 año
+
+                            <input type="radio" name="experiencia" value="más de 3" checked> más de 3 años
                         </label>
                     </p>
                 </div>
+                <div>
+                    <h3>Fecha de nacimineto</h3>
+                    <input type="date" id="fechaInput">
+                </div>
+                <div>
+                    <h3>color</h3>
+                    <input type="color" name="micoolor" value="#99BB00">
+                </div>
+                <div>
+                    <P>
+                        <label>Texto: <textarea name="texto" cols="50" rows="6"></textarea>
+                        </label>
+                    </P>
+                </div>
+                <div>
+                    <label for="listado"> libros: </label>
+                    <select name="libro" id="listado">
+                        <option value="1">IT</option>
+                        <option value="2">Carrie</option>
+                        <option value="3">El Resplandor</option>
+                        <option value="4">Miery</option>
+                    </select>
+                </div>
+                <div>
+                    <p><input type="submit" value="enviar "></p>
+                </div>
+
             </form>
         </div>
 
@@ -96,3 +119,14 @@
 </body>
 
 </html>
+
+<script>
+    // Obtener la fecha actual en formato ISO (YYYY-MM-DD)
+    let fechaActual = new Date().toISOString().split('T')[0];
+
+    // Seleccionar el input de tipo date por su ID (supongamos que tiene el ID 'fechaInput')
+    let fechaInput = document.getElementById('fechaInput');
+
+    // Establecer el valor del input a la fecha actual
+    fechaInput.value = fechaActual;
+</script>
